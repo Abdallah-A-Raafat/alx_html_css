@@ -1,11 +1,16 @@
 body {
   display: flex;
   flex-direction: column;
+  background-color: purple;
+  font-family: Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5;
 }
 main{
   display: flex;
   flex-direction: row;
   flex: auto;
+
 }
 article{
   flex: 2;
@@ -14,4 +19,22 @@ article{
 aside {
   flex: 1;
   overflow-y: auto;
+  height: 50%;
+  background: rgb(120, 0, 120);
+}
+footer {
+  background: rgb(120, 0, 120);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: solid black 1px;
+  table-layout: auto;
+}
+th, td {
+  border: solid black 1px;
+  text-align: center;
 }
