@@ -1,4 +1,4 @@
-/* تنسيق عام */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,7 +6,7 @@ body {
   color: #333;
 }
 
-/* الهيدر */
+
 
 nav {
     position: absolute;
@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 
-/* سيشن البطل (Hero) */
+
 .hero {
   background-image: url(./assets/Group\ 3.png);
   background-size: cover;
@@ -187,4 +187,100 @@ nav ul li a {
 
 .stars i:nth-child(5) {
   color: #ffffff; 
+}
+.membership {
+  background: #071629;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+.membership h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  padding: 20px 0 80px 0;
+}
+.membership-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.membership-options p {
+  font-size: 16px;
+  padding: 20px;
+  width: 300px;
+}
+.membership button {
+  background: #ff00ff;
+  color: #fff;
+  border: none;
+  padding: 20px 40px;
+  font-size: 16px;
+  margin: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.faq{
+  background: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faq h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  padding: 20px 0 80px 0;
+}
+.faq-columns{
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.faq-item{
+  width: 700px;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+}
+.faq-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.faq-item p {
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
+  background: #071629;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  flex-direction: column; 
+  gap: 20px; 
+}
+
+.footer-content div {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+
+.footer-content img {
+  height: 30px; 
+  margin-right: 1000px;
+  margin-left: 250px;
+}
+
+.social-icons i {
+  font-size: 24px; 
+  color: #fff;
+}
+
+.footer-content p {
+  margin: 0; 
+  font-size: 8px; 
 }
