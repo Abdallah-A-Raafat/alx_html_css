@@ -1,0 +1,190 @@
+/* تنسيق عام */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* الهيدر */
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px 0 60px;
+    margin-top: 20px;
+    z-index: 2;
+}
+nav img {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+}
+
+
+/* سيشن البطل (Hero) */
+.hero {
+  background-image: url(./assets/Group\ 3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.hero-text h1 {
+  font-size: 100px;
+  margin-top: 120px;
+  
+}
+
+.hero-text ul {
+  list-style: none;
+  padding: 0 60px;
+  display: flex;
+  gap: 100px;
+  margin: 40px ;
+
+}
+
+.hero-text ul li {
+  padding: 5px 10px;
+}
+
+.hero-text button {
+  background: #ff00ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 90px 0 ;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.teachers-section {
+  background: #1a1a1a;
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.teachers-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  padding: 20px;
+  ;
+}
+
+.teachers {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.teacher {
+  text-align: center;
+}
+
+.teacher img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.testimonial{
+  background: #ff00ff;
+  text-align: center;
+  color: #333;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+.testimonial-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.testimonial-text {
+  max-width: 600px;
+  margin-left: 20px;
+  color : #fff;
+}
+.tutorials {
+  background: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+.tutorials h2 {
+  font-size: 32px;
+  margin: auto;
+  padding: 50px 0 100px 0;
+
+}
+.tutorial-list {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+}
+.tutorial p{
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+  line-height: 1.5rem;
+  width: 350px;
+}
+.tutorial img[alt="Phillip Massey"] {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.tutorial-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+} 
+.tutorial-author h4{
+  font-size: 18px;
+  margin: 0;
+  color: #ff00ff;
+}
+.stars i {
+  color: #ffffff; 
+  font-size: 20px; 
+}
+
+.stars i:nth-child(-n+4) {
+  color: #ff00ff; 
+}
+
+.stars i:nth-child(5) {
+  color: #ffffff; 
+}
