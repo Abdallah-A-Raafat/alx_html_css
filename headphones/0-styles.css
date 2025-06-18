@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px 0 60px;
+    margin-top: 20px;
+    z-index: 2;
+}
+nav img {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 60%;
+    margin-left: 50px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    color: #fff;
+}
+
+nav ul li {
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+nav .menu-icon {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+  }
+
+  nav .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  nav .nav-links {
+    display: none
+  }
+
+  nav .menu-icon {
+    display: block;
+    position: absolute;
+    left: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px;
+  }
+}
+
+.hero{
+  background-image: url(./assets/headphones_hero_1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-content{
+  line-height: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 30px;
+  max-width: 1000px;
+  text-align: center;
+}
+.hero-content button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #FF6565;
+  color: #fff;
+  border: none;
+  border-radius: 25px;     
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.hero-text {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 70px;
+  max-width: 1200px;
+  text-align: center;
+  line-height: 2rem;
+}
