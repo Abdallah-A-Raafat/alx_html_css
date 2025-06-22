@@ -1,0 +1,307 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px 0 60px;
+    margin-top: 20px;
+    z-index: 2;
+}
+nav img {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 60%;
+    margin-left: 50px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    color: #fff;
+}
+
+nav ul li {
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+nav .menu-icon {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+  }
+
+
+  nav .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  nav .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    height: 100vh;
+  }
+    nav .nav-links.active {
+    display: flex;
+    }
+
+  nav .menu-icon {
+    display: block;
+    position: absolute;
+    left: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px;
+  }
+}
+
+.hero{
+  background-image: url(./assets/headphones_hero_1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-content{
+  line-height: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 30px;
+  max-width: 1000px;
+  text-align: center;
+}
+.hero-content button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #FF6565;
+  color: #fff;
+  border: none;
+  border-radius: 25px;     
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.hero-text {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 70px;
+  max-width: 1200px;
+  text-align: center;
+  line-height: 2rem;
+}
+/* WhatWeDo Section Styles */
+.WhatWeDo {
+  padding: 60px 0 40px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.WhatWeDo .disciption {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+.WhatWeDo h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+.WhatWeDo .disciption p {
+  color: #222;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.WhatWeDo .items {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.WhatWeDo .item {
+  background: none;
+  border: none;
+  width: 180px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.WhatWeDo .item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 18px 0 10px 0;
+}
+
+.WhatWeDo .item p {
+  color: #444;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Icon Styles */
+.icon {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+
+/* Sound Icon */
+.icon-sound::before,
+.icon-sound::after {
+  content: '';
+  position: absolute;
+  background: #ff3b6b;
+  border-radius: 2px;
+}
+.icon-sound::before {
+  left: 10px;
+  top: 10px;
+  width: 6px;
+  height: 28px;
+}
+.icon-sound::after {
+  left: 26px;
+  top: 16px;
+  width: 6px;
+  height: 16px;
+}
+
+/* Movie Icon */
+.icon-movie {
+  border: 2px solid #ff3b6b;
+  border-radius: 6px;
+}
+.icon-movie::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 8px;
+  width: 36px;
+  height: 10px;
+  background: #ff3b6b;
+  border-radius: 2px 2px 0 0;
+}
+.icon-movie::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 20px;
+  width: 36px;
+  height: 18px;
+  border: 2px solid #ff3b6b;
+  border-radius: 0 0 6px 6px;
+}
+
+/* Music Icon */
+.icon-music::before {
+  content: '';
+  position: absolute;
+  left: 22px;
+  top: 8px;
+  width: 4px;
+  height: 28px;
+  background: #ff3b6b;
+  border-radius: 2px;
+}
+.icon-music::after {
+  content: '';
+  position: absolute;
+  left: 28px;
+  top: 32px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #ff3b6b;
+}
+
+/* Idea Icon */
+.icon-idea::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 8px;
+  width: 20px;
+  height: 28px;
+  border-radius: 50% 50% 60% 60%;
+  border: 2px solid #ff3b6b;
+}
+.icon-idea::after {
+  content: '';
+  position: absolute;
+  left: 22px;
+  top: 36px;
+  width: 4px;
+  height: 8px;
+  background: #ff3b6b;
+  border-radius: 2px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 900px) {
+  .WhatWeDo .items {
+    gap: 20px;
+  }
+  .WhatWeDo .item {
+    width: 140px;
+  }
+}
+@media (max-width: 600px) {
+  .WhatWeDo .items {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .WhatWeDo .item {
+    width: 90%;
+    max-width: 300px;
+  }
+}
